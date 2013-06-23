@@ -1,5 +1,2 @@
 #!/bin/bash
 
-echo Changing root shell to zsh
-chsh -s /bin/zsh root
-
