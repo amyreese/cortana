@@ -1,0 +1,4 @@
+#!/bin/bash
+
+useradd -m -s /bin/bash -U -G wheel jreese
+

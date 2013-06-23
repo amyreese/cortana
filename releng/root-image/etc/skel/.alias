@@ -1,0 +1,59 @@
+
+alias mkdir="mkdir -p"
+
+alias pu="pushd"
+alias po="popd"
+alias md="mkdir"
+alias rd="rmdir"
+
+alias ls="/bin/ls --color=auto"
+alias ll="ls -lh"
+alias la="ll -A"
+alias al="la"
+alias sl="ls"
+
+alias cd..="cd .."
+alias cd-="cd -"
+alias dc="cd"
+
+alias c="clear"
+alias free="free -m"
+alias more="less"
+alias which="which"
+
+alias psg="ps ax | grep"
+alias df="df -h"
+alias du="du -h"
+alias ds="du -sh"
+
+alias rdiff=`which diff`
+alias diff="diff -urN --exclude=CVS --exclude=.svn --exclude='.git*' --exclude='*.swp'"
+alias cdiff="grep -c '^[+-][^+-]'"
+alias mdiff="diff --exclude=config_inc.php"
+alias grep="grep --color"
+
+alias vim="vim -p"
+alias view="vim -pR"
+
+alias pyclean="find . -name '*.pyc' -delete && find . -name '__pycache__' -delete"
+
+alias mkctags="ctags-exuberant -R -f tags --totals=yes"
+alias ssk="keychain ~/.ssh/id_rsa; source ~/.keychain/\`hostname\`-sh"
+alias gpk="keychain DE6184DC C45D960E; source ~/.keychain/\`hostname\`-sh-gpg"
+
+alias irc="ssh -t jreese@dyson bin/irc"
+alias proxy="ssh dyson -D 1083 -L 3128:localhost:3128"
+
+alias p="sudo pacman"
+alias pi="sudo pacman -Sy"
+alias pup="sudo pacman -Syu"
+
+alias aur="pacaur --aur"
+alias aurup="pacaur -Syu"
+
+which start >/dev/null 2>&1   && alias start="sudo start"     || alias start="sudo systemctl start"
+which stop >/dev/null 2>&1    && alias stop="sudo stop"       || alias stop="sudo systemctl stop"
+which restart >/dev/null 2>&1 && alias restart="sudo restart" || alias restart="sudo systemctl restart"
+which status >/dev/null 2>&1  && alias status="sudo status"   || alias status="sudo systemctl status"
+
+which hub >/dev/null 2>&1     && eval "$(hub alias -s)"
