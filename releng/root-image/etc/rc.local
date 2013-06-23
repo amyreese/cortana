@@ -1,4 +1,5 @@
 #!/bin/bash
 
-useradd -m -s /bin/bash -U -G wheel jreese
+echo Changing root shell to zsh
+chsh -s /bin/zsh root
 
