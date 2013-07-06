@@ -1,6 +1,9 @@
-jreese-core
 grub-efi-x86_64
 gummiboot
 prebootloader
 refind-efi
+jreese-core
+jreese-gnome
+xf86-video-intel
+xf86-video-nouveau
 zfs
