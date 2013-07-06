@@ -4,6 +4,7 @@ prebootloader
 refind-efi
 jreese-core
 jreese-gnome
+xf86-input-mtrack-git
 xf86-video-intel
 xf86-video-nouveau
 zfs
