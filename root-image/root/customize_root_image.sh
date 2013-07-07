@@ -20,6 +20,8 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
 curl http://pub.noswap.com/arch/noswap-repo.sh | sh
 
+sed -i -e 's|\(Driver "evdev"\)|\1\n\tOption "XkbLayout" "dvorak"|' /etc/X11/xorg.conf.d/10-evdev.conf
+
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable NetworkManager.service
