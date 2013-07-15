@@ -1,0 +1,11 @@
+[Unit]
+Description=Persistent /home
+Before=local-fs.target
+
+[Mount]
+What=/dev/disk/by-label/home
+Where=/home
+Options=defaults,noatime,nodiratime
+
+[Install]
+WantedBy=multi-user.target
