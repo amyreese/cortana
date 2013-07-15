@@ -1,13 +1,14 @@
 of:=/dev/null
 
 build:
-	./build.sh -v
+	sudo chown -R root:root root-image
+	sudo ./build.sh -v
 
 write: build
-	dd if=$(shell find out -name '*.iso' | sort -h | tail -n1) of=$(of)
+	sudo dd if=$(shell find out -name '*.iso' | sort -h | tail -n1) of=$(of)
 
 clean:
-	rm -rf work
+	sudo rm -rf work
 
 dist-clean: clean
-	rm -rf out
+	sudo rm -rf out
