@@ -24,4 +24,4 @@ sed -i -e 's|\(Driver "evdev"\)|\1\n\tOption "XkbLayout" "dvorak"\n\tOption "Xkb
 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
-systemctl enable NetworkManager.service
+systemctl enable home.mount NetworkManager.service
