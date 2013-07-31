@@ -1,0 +1,4 @@
+[submodule "root-image/etc/skel/.oh-my-zsh"]
+	path = root-image/etc/skel/.oh-my-zsh
+	url = https://github.com/jreese/oh-my-zsh.git
+	branch = jreese
