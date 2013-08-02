@@ -6,7 +6,7 @@ Before=local-fs.target
 What=/dev/disk/by-label/home
 Where=/home
 Options=defaults,noatime,nodiratime
-TimeoutSec=5
+TimeoutSec=5s
 
 [Install]
 WantedBy=multi-user.target
