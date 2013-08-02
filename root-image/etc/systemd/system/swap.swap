@@ -1,0 +1,10 @@
+[Unit]
+Description=Local swap drive
+Before=local-fs.target
+
+[Mount]
+What=/dev/disk/by-label/swap
+TimeoutSec=5s
+
+[Install]
+WantedBy=multi-user.target
