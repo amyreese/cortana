@@ -9,6 +9,7 @@ endif
 
 write: build
 	dd if=$(shell find out -name '*.iso' | sort -h | tail -n1) of=$(of)
+	sync
 
 clean:
 	rm -rf work
