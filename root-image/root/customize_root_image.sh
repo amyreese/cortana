@@ -15,6 +15,7 @@ chmod 440 /etc/sudoers.d/g_wheel
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
+pacman-key --init
 curl https://noswap.com/arch/noswap-repo.sh | sh
 
 sed -i -e 's|\(Driver "evdev"\)|\1\n\tOption "XkbLayout" "dvorak"\n\tOption "XkbOptions" "ctrl:nocaps,compose:menu,terminate:ctrl_alt_bksp"|' /etc/X11/xorg.conf.d/10-evdev.conf
