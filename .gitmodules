@@ -1,0 +1,3 @@
+[submodule "root-image/root/dotfiles"]
+	path = root-image/root/dotfiles
+	url = https://github.com/jreese/dotfiles.git
