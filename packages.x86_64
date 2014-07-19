@@ -3,5 +3,6 @@ gummiboot
 prebootloader
 refind-efi
 jreese-core
+jreese-drivers
 jreese-gnome
 zfs
